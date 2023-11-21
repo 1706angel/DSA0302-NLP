@@ -1,7 +1,6 @@
 import nltk
 from nltk.tokenize import word_tokenize
 
-# Download NLTK data (if not already downloaded)
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
@@ -10,15 +9,12 @@ def pos_tagging(text):
     pos_tags = nltk.pos_tag(words)
     return pos_tags
 
-# Example texts
 text1 = "The sun is shining brightly."
 text2 = "I love reading interesting books."
 
-# Perform part-of-speech tagging
 pos_tags1 = pos_tagging(text1)
 pos_tags2 = pos_tagging(text2)
 
-# Display the results
 print("Text 1: " + text1)
 print("Part-of-Speech Tags 1:")
 print(pos_tags1)
